@@ -30,6 +30,8 @@ check([{ok,[{appl_spec,_Id,Info}]}|T])->
     true=proplists:is_defined(vsn,Info),
     true=proplists:is_defined(app,Info),
     true=proplists:is_defined(gitpath,Info),
+    true=proplists:is_defined(local_resource_type,Info),
+    true=proplists:is_defined(target_resource_type,Info),
     check(T).
 
    

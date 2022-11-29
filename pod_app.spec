@@ -2,7 +2,9 @@
  [{appl_name,"pod_app"},
   {vsn,"0.1.0"},
   {app,pod_app},
-  {gitpath,"https://github.com/joq62/pod_app.git"}
+  {gitpath,"https://github.com/joq62/pod_app.git"},
+  {local_resource_type,[common,resource_discovery]},
+  {target_resource_type,[db_etcd_app]}
  ]
 }.
 

@@ -2,7 +2,9 @@
  [{appl_name,"ops_node"},
   {vsn,"0.1.0"},
   {app,ops_node},
-  {gitpath,"https://github.com/joq62/ops_node.git"}
+  {gitpath,"https://github.com/joq62/ops_node.git"},
+  {local_resource_type,[ops_node]},
+  {target_resource_type,[nodelog_app]}
  ]
 }.
 
