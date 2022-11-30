@@ -1,10 +1,10 @@
-{appl_spec,"ops_node",
- [{appl_name,"ops_node"},
+{appl_spec,"ops_node_app",
+ [{appl_name,"ops_node_app"},
   {vsn,"0.1.0"},
-  {app,ops_node},
+  {app,ops_node_app},
   {gitpath,"https://github.com/joq62/ops_node.git"},
   {local_resource_type,[ops_node]},
-  {target_resource_type,[nodelog_app]}
+  {target_resource_type,[nodelog,db_etcd]}
  ]
 }.
 
