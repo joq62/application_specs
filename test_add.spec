@@ -4,7 +4,7 @@
   {app,test_add},
   {gitpath,"https://github.com/joq62/test_add.git"},
   {local_resource_type,[adder]},
-  {target_resource_type,[]}
+  {target_resource_type,[adder]}
  ]
 }.
 
