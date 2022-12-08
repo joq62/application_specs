@@ -18,13 +18,13 @@
 %% --------------------------------------------------------------------
 start()->
     
-    check(all_info()),
+    check(all_info(),na),
     init:stop(),
     ok.
 
-check([])->
+check([],_)->
     io:format("Success, OK ! ~n");
-check([{ok,[{appl_spec,_Id,Info}]}|T])->
+check([{ok,[{appl_spec,_Id,Info}]}|T],_)->
     io:format("Checking ~p~n",[Info]),
     true=proplists:is_defined(appl_name,Info),
     true=proplists:is_defined(vsn,Info),
@@ -32,7 +32,12 @@ check([{ok,[{appl_spec,_Id,Info}]}|T])->
     true=proplists:is_defined(gitpath,Info),
     true=proplists:is_defined(local_resource_type,Info),
     true=proplists:is_defined(target_resource_type,Info),
-    check(T).
+    true=proplists:is_defined(num_instances,Info),
+    true=proplists:is_defined(affinity,Info),
+    check(T,T);
+check(Error,T) ->
+    io:format("error,Error T ~p~n",[{Error,T}]).
+
 
    
 
