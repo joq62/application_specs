@@ -5,7 +5,5 @@
      {app,pod_app},
      {gitpath,"https://github.com/joq62/pod_app.git"},
      {local_resource_type,[common,resource_discovery,pod_app]},
-     {target_resource_type,[nodelog,db_etcd]},
-     {num_instances,1 },
-     {affinity,all_pods}
+     {target_resource_type,[nodelog,db_etcd]}
  ]}.

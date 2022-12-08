@@ -32,8 +32,6 @@ check([{ok,[{appl_spec,_Id,Info}]}|T],_)->
     true=proplists:is_defined(gitpath,Info),
     true=proplists:is_defined(local_resource_type,Info),
     true=proplists:is_defined(target_resource_type,Info),
-    true=proplists:is_defined(num_instances,Info),
-    true=proplists:is_defined(affinity,Info),
     check(T,T);
 check(Error,T) ->
     io:format("error,Error T ~p~n",[{Error,T}]).

@@ -5,7 +5,5 @@
      {app,math},
      {gitpath,"https://github.com/joq62/math.git"},
      {local_resource_type,[math,adder]},
-     {target_resource_type,[nodelog]},
-     {num_instances,2 },
-     {affinity,any_host}
+     {target_resource_type,[nodelog]}
  ]}.

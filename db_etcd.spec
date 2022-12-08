@@ -5,7 +5,5 @@
      {app,db_etcd},
      {gitpath,"https://github.com/joq62/db_etcd.git"},
      {local_resource_type,[db_etcd]},
-     {target_resource_type,[nodelog]},
-     {num_instances,},
-     {affinity,any_host}
+     {target_resource_type,[nodelog]}  
  ]}.
