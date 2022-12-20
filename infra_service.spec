@@ -1,0 +1,9 @@
+{appl_spec,"infra_service",
+ [
+     {appl_name,"infra_service"},
+     {vsn,"0.1.0"},
+     {app,infra_service_app},
+     {gitpath,"https://github.com/joq62/infra_service_app.git"},
+     {local_resource_type,[oam,nodelog,infra_service]},
+     {target_resource_type,[nodelog]}
+ ]}.
