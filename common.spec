@@ -1,0 +1,9 @@
+{appl_spec,"common",
+ [
+     {appl_name,"common"},
+     {vsn,"0.1.0"},
+     {app,common},
+     {gitpath,"https://github.com/joq62/common.git"},
+     {local_resource_type,[common]},
+     {target_resource_type,[nodelog]}  
+ ]}.

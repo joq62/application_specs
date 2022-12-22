@@ -1,0 +1,9 @@
+{appl_spec,"resource_discovery",
+ [
+     {appl_name,"resource_discovery"},
+     {vsn,"0.1.0"},
+     {app,resource_discovery},
+     {gitpath,"https://github.com/joq62/resource_discovery.git"},
+     {local_resource_type,[resource_discovery]},
+     {target_resource_type,[nodelog]}  
+ ]}.
