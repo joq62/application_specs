@@ -1,14 +1,14 @@
-#{filename=>"kvs_test.application",
+#{filename=>"add_test_c200.application",
   %% application_info
-    	application_name=>"kvs_test", % used for ?
+    	application_name=>"add_test", % used for ?
   	vsn=>"0.1.0",			%  used fore ?
-  	app=>kvs_test, 		% ping
-  	giturl=>"https://github.com/joq62/kvs_test.git",
+  	app=>add_test, 		% ping
+  	giturl=>"https://github.com/joq62/add_test.git",
   	build_dir=>"_build",
   	libs=>"_build/default/lib",
-	apps_to_start=>[log,rd,mnesia,kvs_test],
+	apps_to_start=>[log,rd,add_test],
   %% deployment_info
-	host=>"c50",
+	host=>"c200",
 	
   % deployment_status
 	application_dir=>undefined,
