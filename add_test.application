@@ -16,7 +16,6 @@
   %% deployment_info
 	host=>"c50",
   % deployment_status
-	application_dir=>undefined,
 	node=>undefined,
 	status=>not_deployed,
 	created=>undefined
