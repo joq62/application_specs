@@ -1,0 +1,23 @@
+#{filename=>"add_test_c202.application",
+  %% application_info
+    	application_name=>"add_test", % used for ?
+  	vsn=>"0.1.0",			%  used fore ?
+  	app=>add_test, 		% ping
+	git_url_aarch64=>"https://github.com/joq62/add_test_arm.git",
+	git_url_x86_64=>"https://github.com/joq62/add_test_x86.git",
+	tar_filename=>"add_test.tar.gz",
+	tar_dir=>"tar_dir",
+	application_dir=>"add_test_container",
+	nodename=>"add_test",	
+	
+	build_dir=>"_build",
+  	libs=>"_build/default/lib",
+	apps_to_start=>[log,rd,add_test],
+  %% deployment_info
+	host=>"c202",
+  % deployment_status
+	node=>undefined,
+	status=>not_deployed,
+	created=>undefined
+	
+}.
