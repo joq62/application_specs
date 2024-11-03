@@ -1,18 +1,21 @@
 #{filename=>"kvs_test.application",
   %% application_info
-    	application_name=>"kvs_test", % used for ?
+    	application_name=>"add_test", % used for ?
   	vsn=>"0.1.0",			%  used fore ?
   	app=>kvs_test, 		% ping
-  	giturl=>"https://github.com/joq62/kvs_test.git",
-  	build_dir=>"_build",
+	git_url_aarch64=>"https://github.com/joq62/kvs_test_arm.git",
+	git_url_x86_64=>"https://github.com/joq62/kvs_test_x86.git",
+	tar_filename=>"kvs_test.tar.gz",
+	tar_dir=>"tar_dir",
+	application_dir=>"kvs_test_container",
+	nodename=>"kvs_test",	
+	
+	build_dir=>"_build",
   	libs=>"_build/default/lib",
-	apps_to_start=>[log,rd,mnesia,kvs_test],
+	apps_to_start=>[log,rd,add_test],
   %% deployment_info
 	host=>"c50",
-	
   % deployment_status
-	application_dir=>undefined,
-	nodename=>undefined,
 	node=>undefined,
 	status=>not_deployed,
 	created=>undefined
