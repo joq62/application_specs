@@ -1,0 +1,23 @@
+#{filename=>"phoscon_lgh.application",
+  %% application_info
+    	application_name=>"phoscon", % used for ?
+  	vsn=>"0.1.0",			%  used fore ?
+  	app=>phoscon, 		% ping
+	git_url_aarch64=>"https://github.com/joq62/phoscon_arm.git",
+	git_url_x86_64=>"https://github.com/joq62/phoscon.git",
+	tar_filename=>"phoscon.tar.gz",
+	tar_dir=>"tar_dir",
+	application_dir=>"phoscon_container",
+	nodename=>"phoscon",	
+	
+	build_dir=>"_build",
+  	libs=>"_build/default/lib",
+	apps_to_start=>[log,rd,phoscon,phoscon_server],
+  %% deployment_info
+	host=>"c202",
+  % deployment_status
+	node=>undefined,
+	status=>not_deployed,
+	created=>undefined
+	
+}.
