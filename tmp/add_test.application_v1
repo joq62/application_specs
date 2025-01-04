@@ -1,4 +1,4 @@
-#{filename=>"add_test_c202.application",
+#{filename=>"add_test.application",
   %% application_info
     	application_name=>"add_test", % used for ?
   	vsn=>"0.1.0",			%  used fore ?
@@ -14,7 +14,7 @@
   	libs=>"_build/default/lib",
 	apps_to_start=>[log,rd,add_test],
   %% deployment_info
-	host=>"c202",
+	host=>"c50",
   % deployment_status
 	node=>undefined,
 	status=>not_deployed,

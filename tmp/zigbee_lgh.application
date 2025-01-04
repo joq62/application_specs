@@ -1,0 +1,23 @@
+#{filename=>"zigbee_lgh.application",
+  %% application_info
+    	application_name=>"zigbee", % used for ?
+  	vsn=>"0.1.0",			%  used fore ?
+  	app=>zigbee, 		% ping
+	git_url_aarch64=>"https://github.com/joq62/zigbee_arm.git",
+	git_url_x86_64=>"https://github.com/joq62/zigbee_x86.git",
+	tar_filename=>"zigbee.tar.gz",
+	tar_dir=>"tar_dir",
+	application_dir=>"zigbee_container",
+	nodename=>"zigbee",	
+	
+	build_dir=>"_build",
+  	libs=>"_build/default/lib",
+	apps_to_start=>[log,rd,zigbee,zigbee_server],
+  %% deployment_info
+	host=>"c202",
+  % deployment_status
+	node=>undefined,
+	status=>not_deployed,
+	created=>undefined
+	
+}.
