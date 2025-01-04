@@ -4,12 +4,9 @@
   	vsn=>"0.1.0",			%  used fore ?
   	app=>add_test, 		% ping
 	git_url=>"https://github.com/joq62/add_test.git",
-	application_dir=>"add_test_container",
-	nodename=>"add_test",	
-	
-	build_dir=>"_build",
-  	libs=>"_build/default/lib",
-	apps_to_start=>[log,rd,add_test],
+	application_dir=>"add_test",
+	nodename=>"add_test",
+	exec_file_path="_build/default/rel/add_test/bin/add_test",
   %% deployment_info
 	host=>"c50",
   % deployment_status
